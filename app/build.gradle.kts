@@ -75,34 +75,35 @@ dependencies {
     kapt(libs.androidx.hilt.compiler.v100)
 
     // Compose dependencies
-    implementation (libs.androidx.lifecycle.viewmodel.compose)
-    implementation (libs.androidx.navigation.compose)
-    implementation (libs.accompanist.flowlayout)
-    implementation (libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.accompanist.flowlayout)
+    implementation(libs.androidx.hilt.navigation.compose)
 
     // Coroutine Lifecycle Scopes
-    implementation (libs.androidx.lifecycle.viewmodel.ktx)
-    implementation (libs.androidx.lifecycle.runtime.ktx.v231)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx.v231)
 
     // Retrofit
-    implementation (libs.retrofit)
-    implementation (libs.converter.gson)
-    implementation (libs.converter.moshi)
-    implementation( libs.okhttp)
-    implementation (libs.logging.interceptor)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.converter.moshi)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
 
     // OpenCSV
-    implementation (libs.opencsv)
+    implementation(libs.opencsv)
 
     // Room
-    implementation (libs.androidx.room.runtime)
-    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.runtime)
+    implementation("androidx.room:room-ktx:2.6.1")
+    kapt(libs.androidx.room.compiler)
 
     // Compose Nav Destinations
     implementation("io.github.raamcosta.compose-destinations:core:1.11.2-alpha")
     ksp("io.github.raamcosta.compose-destinations:ksp:1.11.2-alpha")
 
-    implementation ("com.google.accompanist:accompanist-swiperefresh:0.24.2-alpha")
+    implementation("com.google.accompanist:accompanist-swiperefresh:0.24.2-alpha")
 }
 kapt {
     correctErrorTypes = true

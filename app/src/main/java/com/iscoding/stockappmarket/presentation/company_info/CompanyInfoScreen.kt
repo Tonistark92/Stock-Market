@@ -31,7 +31,7 @@ fun CompanyInfoScreen(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .background(Color.Blue)
+                .background(Color(0xFF0B1C57))
                 .padding(16.dp)
         ) {
             state.company?.let { company ->
